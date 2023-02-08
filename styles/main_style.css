@@ -6,3 +6,61 @@
 ===============================
 +++++++++++++++++++*/
 
+*, *::after, *::before {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+section, header{
+    min-height: 100vh;
+}
+
+nav{
+    display: grid;
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+    grid-template-columns: 1fr 1fr;
+    background-color: rgb(215, 250, 229);
+    align-items: center;
+    align-content: center;
+    box-shadow: 0 0 1em black;
+    
+
+}
+
+.contenedorLogo{
+    width: 100%;
+    text-align: center;
+    
+}
+
+.contenedorLogo > img{
+    height:70px;
+}
+
+.contenedorEnlaces{
+    width:100%;
+    height: 100%;
+    margin:auto;
+    align-self: center;
+}
+.listaEnlaces{
+
+    display:flex;
+    height: 100% ;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    
+}
+.listaEnlaces > li{
+    list-style: none;
+}
+
