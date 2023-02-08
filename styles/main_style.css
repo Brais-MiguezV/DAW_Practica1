@@ -5,6 +5,7 @@
  Version : 1.0
 ===============================
 +++++++++++++++++++*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 *, *::after, *::before {
     margin:0;
@@ -13,8 +14,14 @@
     font-family: "Roboto", sans-serif;
 }
 
+:root{
+    --color-principal-claro: #f4ede6;
+    --color-complementario-claro:#3aaa38;
+}
+
 a{
     text-decoration: none;
+    
 }
 
 section, header{
@@ -27,12 +34,17 @@ nav{
     width: 100vw;
     height: 80px;
     grid-template-columns: 1fr 1fr;
-    background-color: rgb(215, 250, 229);
+    background-color: var(--color-principal-claro);;
     align-items: center;
     align-content: center;
     box-shadow: 0 0 1em black;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
     
 
+    font-family: "Josefine Sans", sans-serif;
+    font-weight: 100;
+    font-size: medium;
 }
 
 .contenedorLogo{
@@ -60,7 +72,21 @@ nav{
     align-content: center;
     
 }
-.listaEnlaces > li{
+.enlaceNavegacionL{
     list-style: none;
+}
+
+.enlaceNavegacionL > a{
+    color:black;
+}
+
+.enlaceNavegacionL.active > a{
+    color: var(--color-complementario-claro);
+    font-size: large;
+    border-bottom: 2px solid var(--color-complementario-claro);
+}
+
+header{
+    padding-top: 80px;
 }
 
