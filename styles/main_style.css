@@ -26,6 +26,28 @@
   font-family: "Karatone";
   src: url("../fonts/Karatonedemo-0Wr79.ttf");
 }
+
+@font-face {
+  font-family: "Leafy";
+  src: url("../fonts/Leafy-Regular.ttf");
+}
+@font-face {
+  font-family: "Prestigious";
+  src: url("../fonts/Prestigious.otf");
+}
+
+@font-face {
+  font-family: "Daisy";
+  src: url("../fonts/Daisy-Regular.ttf");
+}
+@font-face {
+  font-family: "Loistave";
+  src: url("../fonts/Loistave.ttf");
+}
+@font-face {
+  font-family: "Maglite";
+  src: url("../fonts/Maglite.ttf");
+}
 html{
     font-size: 62.5%;
     scroll-behavior: smooth;
@@ -124,7 +146,7 @@ header {
 }
 
 h1.titulo {
-  font-family: "Karatone", Helvetica, serif;
+  font-family: "Leafy", Helvetica, serif;
   font-size: 15em;
   color: var(--color-principal-claro);
   font-weight: 700;
