@@ -321,11 +321,17 @@ button:hover .button-text {
 .galeriaResumen{
   clip-path: polygon(0 0, 100% 9%, 100% 100%, 0 90%);
   padding:10em;
-  background-color: red;
   display:grid;
   grid-template-columns: repeat(4, 1fr);  
   justify-items: center;
   align-items: center;
+  background-color: var(--color-complementario-oscuro);
+  background-image: url("../images/fondoOscuro.png");
+  background-size: cover;
+  position: relative;
+
+  box-shadow: inset 5px 5px 90px var(--color-principal-claro), inset -5px -5px 90px var(--color-principal-claro );
+
 }
 
 .resumen img{
@@ -336,15 +342,39 @@ button:hover .button-text {
 }
 
 .resumen{
-  border: 3px solid blue;
-  height: 300px;
+  border: 3px solid #ada8a2;
+  height: 400px;
   width: 300px;
   text-align: center;
-  background-color: var(--color-principal-claro-transparente);
+  background-color: var(--color-principal-claro);
   font-size: 2em;
   padding:2em;
-
   border-radius: 20px;
+  box-shadow: 5px 5px 5px #ada8a2, -5px -5px 10px #ada8a2;
   
 }
 
+.resumenTitulo{
+  margin-top: 1em;
+  font-weight: 400;
+  font-size: 25px;
+}
+
+.resumenInfo{
+  margin-top: 0.5em;
+  font-weight: 100;
+  font-size: 18px;
+}
+
+/* .videoFondo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 3;
+  opacity: 0.5;
+  overflow: hidden
+  padding:-10em;
+
+} */
