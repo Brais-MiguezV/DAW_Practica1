@@ -339,7 +339,7 @@ button:hover .button-text {
   background-size: cover;
   position: relative;
 
-  box-shadow: inset -5px -5px 10em rgba(95, 94, 94, 0.5);
+  /* box-shadow: inset -5px -5px 10em rgba(95, 94, 94, 0.5); */
 }
 
 .resumen img {
