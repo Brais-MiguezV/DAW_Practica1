@@ -22,6 +22,16 @@
   --color-principal-claro-transparente: rgba(244, 237, 230, 0.6);
   --color-complementario-claro: #3aaa38;
   --color-complementario-oscuro: #d8eed7;
+  --color-white: #fff;
+  --color-black: #2b2a2a;
+  --color-grey-body: #43484e;
+  --color-grey-light: #ccc;
+  --color-naranja: #fc7700;
+  --slider-shadow: rgba(0, 0, 0, 0.125);
+  --background-navbar: rgba(255, 255, 255, 0.988);
+  --navigation-shadow: rgba(0, 0, 0, 0.298039);
+  --cookiebox-shadow: #808080;
+  --enviar-mensaje-shadow: rgba(0, 0, 0, 0.4);
 }
 
 ::selection {
@@ -318,49 +328,48 @@ button:hover .button-text {
   color: #fff;
 }
 
-.galeriaResumen{
+.galeriaResumen {
   clip-path: polygon(0 0, 100% 9%, 100% 100%, 0 90%);
-  padding:10em;
-  display:grid;
-  grid-template-columns: repeat(4, 1fr);  
+  padding: 10em;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   align-items: center;
-  background-color: var(--color-complementario-oscuro);
-  background-image: url("../images/fondoOscuro.png");
+  background-color: #212121;
   background-size: cover;
   position: relative;
 
-  box-shadow: inset 5px 5px 90px var(--color-principal-claro), inset -5px -5px 90px var(--color-principal-claro );
-
+  box-shadow: inset -5px -5px 10em rgba(95, 94, 94, 0.5);
 }
 
-.resumen img{
-  width:160px;
+.resumen img {
+  width: 160px;
   height: 160px;
   margin: 0 auto;
-
 }
 
-.resumen{
-  border: 3px solid #ada8a2;
+.resumen {
+  /* border: 3px solid #ada8a2; */
   height: 400px;
   width: 300px;
   text-align: center;
   background-color: var(--color-principal-claro);
   font-size: 2em;
-  padding:2em;
+  padding: 2em;
   border-radius: 20px;
-  box-shadow: 5px 5px 5px #ada8a2, -5px -5px 10px #ada8a2;
-  
+  border-radius: 20px;
+  background-color: #212121;
+  box-shadow: 3px 3px 5px #1b1a1a, -3px -3px 5px #2b2b2b;
+  color: var(--color-principal-claro)
 }
 
-.resumenTitulo{
+.resumenTitulo {
   margin-top: 1em;
   font-weight: 400;
   font-size: 25px;
 }
 
-.resumenInfo{
+.resumenInfo {
   margin-top: 0.5em;
   font-weight: 100;
   font-size: 18px;
