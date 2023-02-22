@@ -76,7 +76,7 @@ a {
 }
 body {
   background-color: var(--color-principal-claro);
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 section,
