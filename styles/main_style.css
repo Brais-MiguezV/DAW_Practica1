@@ -167,7 +167,7 @@ header {
 
 h1.titulo {
   font-family: "Leafy", Helvetica, serif;
-  font-size: 150px;
+  font-size: 100px;
   color: var(--color-principal-claro);
   font-weight: 200;
 }
