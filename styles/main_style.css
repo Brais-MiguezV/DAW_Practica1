@@ -168,7 +168,7 @@ h1.titulo {
   font-family: "Leafy", Helvetica, serif;
   font-size: 150px;
   color: var(--color-principal-claro);
-  font-weight: 600;
+  font-weight: 200;
 }
 
 h2.subtitulo {
