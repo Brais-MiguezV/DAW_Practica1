@@ -328,18 +328,26 @@ button:hover .button-text {
   color: #fff;
 }
 
+/*Galeria resumen*/
+
 .galeriaResumen {
-  clip-path: polygon(0 0, 100% 9%, 100% 100%, 0 90%);
-  padding: 10em;
+  margin-top:-6em;
+  padding: 4em;
+  text-align: center;
+
+  /* box-shadow: inset -5px -5px 10em rgba(95, 94, 94, 0.5); */
+}
+
+.contenedorResumen{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   align-items: center;
-  background-color: #212121;
+  /* background-color: #555c54; */
   background-size: cover;
   position: relative;
-
-  /* box-shadow: inset -5px -5px 10em rgba(95, 94, 94, 0.5); */
+  width: 90%;
+  margin: 0 auto;
 }
 
 .resumen img {
@@ -358,9 +366,10 @@ button:hover .button-text {
   padding: 2em;
   border-radius: 20px;
   border-radius: 20px;
-  background-color: #212121;
-  box-shadow: 3px 3px 5px #1b1a1a, -3px -3px 5px #2b2b2b;
-  color: var(--color-principal-claro)
+  /* background-color: #212121; */
+  box-shadow: 3px 3px 5px #c1bbb6, -3px -3px 5px #fbf8f5;
+  color: var(--color-grey-body);
+  transition: all 0.5s ease-in-out;
 }
 
 .resumenTitulo {
@@ -375,15 +384,17 @@ button:hover .button-text {
   font-size: 18px;
 }
 
-/* .videoFondo {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 100vw;
-  z-index: 3;
-  opacity: 0.5;
-  overflow: hidden
-  padding:-10em;
+.resumen:hover{
+  background-color: var(--color-complementario-oscuro);
+  transform: translate(-5px,-5px);
+  box-shadow: 8px 8px 5px #c1bbb6, -8px -8px 5px #fbf8f5;
 
-} */
+}
+
+/*Review resumen*/
+.reviewsResumen{
+  margin-top:-6em;
+  padding: 4em;
+  text-align: center;
+}
+
