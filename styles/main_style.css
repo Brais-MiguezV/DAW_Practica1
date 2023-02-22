@@ -22,7 +22,7 @@
 
   --color-principal-claro-transparente: rgba(244, 237, 230, 0.6);
   --color-complementario-claro: #3aaa38;
-  --color-complementario-oscuro: #d8eed7;
+  --color-complementario-oscuro: rgb(216, 238, 215);
   --color-white: #fff;
   --color-black: #2b2a2a;
   --color-grey-body: #43484e;
@@ -376,31 +376,52 @@ button:hover .button-text {
   box-shadow: 3px 3px 5px #c1bbb6, -3px -3px 5px #fbf8f5;
   color: var(--color-grey-body);
   transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  
+  justify-content: center;
 }
 
+
+
 .resumenTitulo {
-  margin-top: 10px;
-  font-weight: 400;
+  margin: 10px auto;
+  font-weight: 800;
   font-size: 25px;
+  font-family: "Karatone";
+  color: rgba(0, 0, 0, 0.68);
+  border-bottom: 2px dotted var(--color-grey-body);
+  width: fit-content
+  
 }
 
 .resumenInfo {
   margin-top: 10px;
-  font-weight: 100;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgb(103, 102, 102);
 }
 
 .resumen:hover{
   background-color: var(--color-complementario-oscuro);
   transform: translate(-5px,-5px);
   box-shadow: 8px 8px 5px #c1bbb6, -8px -8px 5px #fbf8f5;
-
 }
 
 /*Review resumen*/
 .reviewsResumen{
   margin-top:-6em;
-  padding: 4em;
+  padding: 100px;
   text-align: center;
+  background-image: linear-gradient(to left bottom, rgba(225, 224, 223, 0.495), rgba(213, 218, 212, 0.742)), url("../images/nat-9.jpg");
+  background-size: cover;
+  box-shadow: inset 0px 0px 80px rgba(0, 0, 0, 0.68);
+  background-attachment: fixed;
 }
+
+.
+
+
+
+
 
