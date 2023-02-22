@@ -131,6 +131,7 @@ nav {
 }
 .enlaceNavegacionL {
   list-style: none;
+  
 }
 
 .enlaceNavegacionL > a {
@@ -419,4 +420,18 @@ button:hover .button-text {
   background-size: cover;
   box-shadow: inset 0px 0px 80px rgba(0, 0, 0, 0.68);
   background-attachment: fixed;
+}
+
+.opinion{
+  background-color: red;
+  height: 200px;
+  width:900px;
+  margin:0 auto;
+  transform: skewX(-12deg);
+  border-radius: 10px;
+  font-size: 20px;
+
+}
+.opinion>*{
+  transform: skewX(12deg)
 }
