@@ -17,7 +17,7 @@
 }
 
 :root {
-  --color-principal-claro: #f4ede6;
+  --color-principal-claro: rgb(244, 237, 230);
 
   --color-principal-claro-transparente: rgba(244, 237, 230, 0.6);
   --color-complementario-claro: #3aaa38;
