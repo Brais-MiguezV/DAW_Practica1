@@ -19,8 +19,8 @@
 
 :root {
   --color-principal-claro: rgb(244, 237, 230);
-
   --color-principal-claro-transparente: rgba(244, 237, 230, 0.6);
+  --color-principal-claro-semitransparente: rgba(244, 237, 230, 0.9);
   --color-complementario-claro: #3aaa38;
   --color-complementario-oscuro: rgb(216, 238, 215);
   --color-white: #fff;
@@ -131,7 +131,6 @@ nav {
 }
 .enlaceNavegacionL {
   list-style: none;
-  
 }
 
 .enlaceNavegacionL > a {
@@ -338,7 +337,7 @@ button:hover .button-text {
 
 /*Galeria resumen*/
 
-.galeriaResumen {
+#galeriaResumen {
   margin-top: 60px;
   padding: 40px;
   text-align: center;
@@ -407,7 +406,7 @@ button:hover .button-text {
 }
 
 /*Review resumen*/
-.reviewsResumen {
+#reviewsResumen {
   margin-top: -6em;
   padding: 100px;
   text-align: center;
@@ -422,16 +421,45 @@ button:hover .button-text {
   background-attachment: fixed;
 }
 
-.opinion{
-  background-color: red;
+#reviewsResumen>h2{
+  margin-bottom:80px;
+}
+
+.opinion {
+  background-color: var(--color-principal-claro-semitransparente);
   height: 200px;
-  width:900px;
-  margin:0 auto;
-  transform: skewX(-12deg);
+  width: 900px;
+  margin: 80px auto;
   border-radius: 10px;
   font-size: 20px;
-
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.473);
+  display: grid;
+  padding: 30px;
+  grid-template-columns: 1fr 4fr;
+  align-items: center; 
+  justify-content: center;
+  transform: skewX(-12deg);
 }
-.opinion>*{
-  transform: skewX(12deg)
+
+.opinion > * {
+  transform: skewX(12deg);
+}
+
+.opinionImagen img {
+  width: 120px;
+  height: 120px;
+  padding:10px;
+  margin: 0 auto;
+}
+
+.opinionTexto{
+  text-align: justify;
+  margin: 0 auto;
+  font-size: 16px;
+  padding: 30px;
+  font-family: "Josefine Sans", serif;
+}
+
+.buttonOpinion{
+  font-family: "Josefine Sans", serif;
 }

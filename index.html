@@ -26,10 +26,10 @@
         <div class="contenedorEnlaces">
             <ul class="listaEnlaces">
                 <li class="enlaceNavegacionL active"><a href="index.html">Inicio</a></li>
-                <li class="enlaceNavegacionL"><a href="about.html">About</a></li>
-                <li class="enlaceNavegacionL"><a href="index.html">Portfolio</a></li>
-                <li class="enlaceNavegacionL"><a href="index.html">Valoraciones</a></li>
-                <li class="enlaceNavegacionL"><a href="contact.html">Contacto</a></li>
+                <li class="enlaceNavegacionL"><a href="./aboutUs/aboutUs.html">About</a></li>
+                <li class="enlaceNavegacionL"><a href="./portfolio/portfolio.html">Portfolio</a></li>
+                <li class="enlaceNavegacionL"><a href="./valoraciones/valoraciones.html">Valoraciones</a></li>
+                <li class="enlaceNavegacionL"><a href="./contacto/contacto.html">Contacto</a></li>
             </ul>
         </div>
     </nav>
@@ -38,7 +38,7 @@
         <div class="contenedorHeader">
             <h1 class="titulo">Fotografias LeMi</h1>
             <h2 class="subtitulo">Expertos en fotos de todo tipo</h2>
-            <button class="buttonHeader"><a href="contact.html">Habla con nosotros</a></button>
+            <a href="./contacto/contacto.html"><button class="buttonHeader">Habla con nosotros</button></a>
         </div>
     </header>
 
@@ -50,10 +50,13 @@
                 excepturi dicta, blanditiis reprehenderit magni aperiam odit a minus nam. Provident corporis,
                 dignissimos sequi dolorem voluptatem itaque veniam, nisi voluptates vero, voluptatum modi?</h4>
             <button class="learn-more">
-                <span class="circle" aria-hidden="true">
-                    <span class="icon arrow"></span>
-                </span>
-                <span class="button-text">Descubre más</span>
+                <a href="./aboutUs/aboutUs.html">
+                    <span class="circle" aria-hidden="true">
+                        <span class="icon arrow"></span>
+                    </span>
+                    <span class="button-text">Descubre más</span>
+                </a>
+
             </button>
         </div>
         <div class="contenedorImagen">
@@ -61,54 +64,42 @@
         </div>
     </section>
 
-    <section class="galeriaResumen">
+    <section id="galeriaResumen">
         <h2 class="titulo">Portfolio</h2>
-        <!-- <video class="videoFondo" autoplay muted loop>
-            <source src="images/videoFondo.mp4" type="video/mp4">
-            <source src="images/videoFondo.webm" type="video/webm">
-            No se puede reproducir video
-        </video> -->
         <div class="contenedorResumen">
-            <a href="">
+            <a href="./portfolio/portfolioComida/portfolioComida.html">
                 <div class="resumen">
-
                     <img src="./images/comidaIcon.png" alt="">
                     <h4 class="resumenTitulo">Comida</h4>
-
-
-                    <!-- <p class="resumenInfo">Diferentes platos de comida en lugares exóticos </p> -->
                 </div>
             </a>
-            <a href="">
+            <a href="./portfolio/portfolioViajes/portfolioViajes.html">
                 <div class="resumen">
                     <img src="./images/mountainIcon.png" alt="">
                     <h4 class="resumenTitulo">Paisajes</h4>
-                    <!-- <p class="resumenInfo">Captura de espacios exteriores, amplios y en la naturaleza</p> -->
                 </div>
             </a>
-            <a href="">
+            <a href="./portfolio/portfolioGimnasia/portfolioGimnasia.html">
                 <div class="resumen">
                     <img src="./images/gimnasiaIcon.png" alt="">
                     <h4 class="resumenTitulo">Gimnasia</h4>
-                    <!-- <p class="resumenInfo">Deporte y fotografía de la mano</p> -->
                 </div>
             </a>
-            <a href="">
+            <a href="./portfolio/portfolioAnimales/portfolioAnimales.html">
                 <div class="resumen">
                     <img src="./images/animalesIcon.png" alt="">
                     <h4 class="resumenTitulo">Animales</h4>
-                    <!-- <p class="resumenInfo">Maravillas visuales de nuestra fauna</p> -->
                 </div>
             </a>
         </div>
     </section>
 
-    <section class="reviewsResumen">
+    <section id="reviewsResumen">
         <h2 class="titulo"> Opiniones de clientes</h2>
 
         <div class="opinion">
             <div class="opinionImagen">
-                <img src="" alt="">
+                <img src="./images/usuarioLogo.png" alt="">
             </div>
             <div class="opinionTexto">
                 <h4 class="opinionTitulo">Unas grandes fotografías</h4>
@@ -118,9 +109,24 @@
             </div>
         </div>
 
+        <div class="opinion">
+            <div class="opinionImagen">
+                <img src="./images/usuarioLogo.png" alt="">
+            </div>
+            <div class="opinionTexto">
+                <h4 class="opinionTitulo">Unas grandes fotografías</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus voluptatem unde dicta ex vitae
+                    error nam quod explicabo consectetur quisquam necessitatibus facere quis sint, adipisci deleniti
+                    quos ratione obcaecati dolor?</p>
+            </div>
+        </div>
+
+        <a href="./valoraciones/valoraciones.html"><button class="buttonHeader buttonOpinion">Ver más</button></a>
+
+
     </section>
 
-    <section class="contactoResumen">
+    <section id="contactoResumen">
         <h2>¿Tienes más dudas?</h2>
         <div class="redes">
             Facebook
