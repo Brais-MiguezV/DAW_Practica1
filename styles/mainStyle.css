@@ -44,7 +44,6 @@
 }
 
 /*Header de la pagina*/
-
 header {
   padding-top: 80px;
   background-image: url("../images/fondoOscuro2.png");
@@ -89,7 +88,6 @@ header {
 }
 
 /*About us resumen*/
-
 #aboutUsResumen {
   padding: 20px;
   margin-top: 10px;
@@ -186,7 +184,6 @@ button.learn-more .button-text {
   font-weight: 700;
   line-height: 1;
   text-align: center;
-  /* text-transform: uppercase; */
   font-size: 2em;
 }
 
@@ -204,7 +201,6 @@ button:hover .button-text {
 }
 
 /*Galeria resumen*/
-
 #galeriaResumen {
   margin-top: 60px;
   padding: 40px;
@@ -216,7 +212,6 @@ button:hover .button-text {
   grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   align-items: center;
-  /* background-color: #555c54; */
   background-size: cover;
   position: relative;
   width: 90%;
@@ -231,7 +226,6 @@ button:hover .button-text {
 }
 
 .resumen {
-  /* border: 3px solid #ada8a2; */
   height: 300px;
   width: 250px;
   text-align: center;
@@ -240,7 +234,6 @@ button:hover .button-text {
   padding: 20px;
   border-radius: 20px;
   border-radius: 20px;
-  /* background-color: #212121; */
   box-shadow: 3px 3px 5px #c1bbb6, -3px -3px 5px #fbf8f5;
   color: var(--color-grey-body);
   transition: all 0.5s ease-in-out;
@@ -273,7 +266,6 @@ button:hover .button-text {
 }
 
 /*Review resumen*/
-
 #reviewsResumen {
   margin-top: -6em;
   padding: 100px;
@@ -332,15 +324,13 @@ button:hover .button-text {
   font-family: "Josefine Sans", serif;
 }
 
-/*Contacto resumen*/
 
+/*Contacto resumen*/
 #contactoResumen{
   margin-top: 60px;
   padding: 40px;
   text-align: center;
 }
-
-
 
 .redes{
   font-size: 15px;
