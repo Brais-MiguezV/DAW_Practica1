@@ -67,11 +67,12 @@
 @font-face {
   font-family: "Harmonais Italic";
   src: url("../fonts/HarmonaisItalic.otf");
+
 }
 
 @font-face {
   font-family: "Harmonais";
-  src: url("../fonts/HarmonaisRegualr.otf");
+  src: url("../fonts/HarmonaisRegualar.otf");
 }
 
 html {
@@ -181,7 +182,7 @@ h1.titulo {
 }
 
 h2.subtitulo {
-  font-family: "Karatone", Helvetica, sans-serif;
+  font-family: "Harmonais Italic", Helvetica, sans-serif;
   font-size: 28px;
   font-weight: 200;
   color: var(--color-principal-claro);
