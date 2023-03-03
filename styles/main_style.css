@@ -378,7 +378,6 @@ button:hover .button-text {
   transition: all 0.5s ease-in-out;
   display: flex;
   flex-direction: column;
-
   justify-content: center;
 }
 
@@ -406,6 +405,7 @@ button:hover .button-text {
 }
 
 /*Review resumen*/
+
 #reviewsResumen {
   margin-top: -6em;
   padding: 100px;
@@ -463,3 +463,40 @@ button:hover .button-text {
 .buttonOpinion{
   font-family: "Josefine Sans", serif;
 }
+
+/*Contacto resumen*/
+
+#contactoResumen{
+  margin-top: 60px;
+  padding: 40px;
+  text-align: center;
+}
+
+#contactoResumen h2{
+  margin-bottom:20px;
+  font-family: "Karatone";
+  font-size: 90px;
+  font-weight: 300;
+  color: var(--color-grey-body);
+}
+
+.redes{
+  font-size: 15px;
+  display: flex;
+  height: 80%;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  padding-top: 80px;
+  width: 60%;
+}
+
+.redes img{
+  color: var(--color-grey-body);
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  
+}
+
