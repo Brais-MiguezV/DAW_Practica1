@@ -52,7 +52,6 @@
   font-family: "Prestigious";
   src: url("../fonts/Prestigious.otf");
 }
-
 @font-face {
   font-family: "Daisy";
   src: url("../fonts/Daisy-Regular.ttf");
@@ -65,6 +64,16 @@
   font-family: "Maglite";
   src: url("../fonts/Maglite.ttf");
 }
+@font-face {
+  font-family: "Harmonais Italic";
+  src: url("../fonts/HarmonaisItalic.otf");
+}
+
+@font-face {
+  font-family: "Harmonais";
+  src: url("../fonts/HarmonaisRegualr.otf");
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
@@ -472,13 +481,7 @@ button:hover .button-text {
   text-align: center;
 }
 
-#contactoResumen h2{
-  margin-bottom:20px;
-  font-family: "Karatone";
-  font-size: 90px;
-  font-weight: 300;
-  color: var(--color-grey-body);
-}
+
 
 .redes{
   font-size: 15px;
