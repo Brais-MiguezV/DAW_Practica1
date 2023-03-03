@@ -13,7 +13,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
   font-family: "Roboto", sans-serif;
 }
 
@@ -182,7 +181,7 @@ h1.titulo {
 }
 
 h2.subtitulo {
-  font-family: "Harmonais Italic", Helvetica, sans-serif;
+  font-family: "Karatone", Helvetica, sans-serif;
   font-size: 28px;
   font-weight: 200;
   color: var(--color-principal-claro);
@@ -238,7 +237,7 @@ h2.subtitulo {
 }
 
 h2.titulo {
-  font-family: "Karatone", Helvetica, sans-serif;
+  font-family: "Harmonais Italic", Helvetica, sans-serif;
   font-size: 90px;
   color: rgba(0, 0, 0, 0.68);
   margin-bottom: 30px;
