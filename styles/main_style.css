@@ -22,7 +22,7 @@
   --color-principal-claro-transparente: rgba(244, 237, 230, 0.6);
   --color-principal-claro-semitransparente: rgba(244, 237, 230, 0.9);
   --color-complementario-claro: #3aaa38;
-  --color-complementario-oscuro: rgb(216, 238, 215);
+  --color-complementario-mas-claro: rgb(216, 238, 215);
   --color-white: #fff;
   --color-black: #2b2a2a;
   --color-grey-body: #43484e;
@@ -194,7 +194,7 @@ h2.subtitulo {
 
 .buttonHeader:hover {
   transform: translateY(-4px) translateX(-2px);
-  box-shadow: 2px 5px 0 0 var(--color-complementario-oscuro);
+  box-shadow: 2px 5px 0 0 var(--color-complementario-mas-claro);
 }
 
 .buttonHeader:active {
@@ -399,7 +399,7 @@ button:hover .button-text {
 }
 
 .resumen:hover {
-  background-color: var(--color-complementario-oscuro);
+  background-color: var(--color-complementario-mas-claro);
   transform: translate(-5px, -5px);
   box-shadow: 8px 8px 5px #c1bbb6, -8px -8px 5px #fbf8f5;
 }
