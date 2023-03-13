@@ -5,3 +5,42 @@
  Version : 1.0
 ===============================
 +++++++++++++++++++*/
+
+header {
+  height: 100vh;
+  position: relative;
+  background-size: cover;
+  background-image: linear-gradient(
+      to right top,
+      rgba(27, 26, 26, 0.495),
+      rgba(49, 49, 49, 0.742)
+    ),
+    url(../images/firewatch-digital-art-birds-forest-wallpaper.jpg);
+}
+
+.contenedorImagenesHeader {
+position: sticky;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  
+  margin:0 auto;
+}
+.imagenHeader {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  filter: blur(10px);
+  box-shadow: 0 0 20px rgba(27, 26, 26, 0.6);
+}
+
+.contenedor{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+
+}
