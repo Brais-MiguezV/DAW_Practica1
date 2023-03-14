@@ -45,6 +45,7 @@ header {
 /*Seccion de los socios*/
 
 #contenedorSocios{
+    position: absolute;
     padding: 30px;
     margin-top: 20px;
     display: flex;
@@ -56,7 +57,7 @@ header {
 .socio{
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 800px;
 }
 
 .perfilSocio{
@@ -65,6 +66,7 @@ header {
     margin: auto;
     padding: 10px;
     border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.473);
     background-color: aliceblue;
 }
 
@@ -76,20 +78,21 @@ header {
 
 .perfilSocio img:hover{
     transform: scale(1.1);
-    transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;   
 }
 
 .descripcionSocio{
     padding: 20px;
     height: 50%;
     margin: auto;
-    background-color: blueviolet;
+    display: inline-block;
     color: var(--color-grey-body);
 }
 
 .descripcionSocio>*{
     text-align: center;
     margin: 0 auto;
+    position: relative;
 }
 
 .nombreSocio{
