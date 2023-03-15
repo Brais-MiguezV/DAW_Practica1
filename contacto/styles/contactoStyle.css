@@ -6,6 +6,12 @@
 ===============================
 +++++++++++++++++++*/
 
+header, #contenedorContacto {
+    background-image: url("/contacto/images/fondo.jpg");
+    background-size: cover;
+    background-attachment: fixed;  
+}
+
 
 header {
     padding-top: 80px;
@@ -15,7 +21,7 @@ header {
 header h2{
     font-family: "Harmonais", Helvetica, sans-serif;
     font-size: 22px;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
     padding-top: 50px;
 }
@@ -25,7 +31,7 @@ header h2{
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;  
 }
 
 form{
@@ -37,4 +43,14 @@ form{
 
 .botonEnviar{
     font-family: "Josefine Sans", serif;
+}
+
+input{
+    font-family: "Josefine Sans", serif;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
 }
