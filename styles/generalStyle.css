@@ -154,7 +154,7 @@ h4.subtitulo {
 }
 
 .contenedorLogo > img {
-  height: 70px;
+  height: 50px;
 }
 
 .contenedorEnlaces {
@@ -185,3 +185,4 @@ h4.subtitulo {
   font-size: large;
   border-bottom: 2px solid var(--color-complementario-claro);
 }
+
