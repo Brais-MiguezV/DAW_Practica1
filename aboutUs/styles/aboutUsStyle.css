@@ -45,13 +45,11 @@ header {
 /*Seccion de los socios*/
 
 #contenedorSocios{
-    position: absolute;
     padding: 30px;
-    margin-top: 20px;
+    margin: 150px 0px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 120px;
 }
 
 .socio{
