@@ -85,6 +85,7 @@ header {
     padding: 20px;
     height: 50%;
     margin: auto;
+    max-width: 450px;
     display: inline-block;
     color: var(--color-grey-body);
 }

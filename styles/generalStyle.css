@@ -97,6 +97,8 @@ header {
   width: 100vw;
 }
 
+/*--Navegacion--*/
+
 nav {
   display: grid;
   position: fixed;
@@ -154,7 +156,7 @@ h4.subtitulo {
 }
 
 .contenedorLogo > img {
-  height: 70px;
+  height: 50px;
 }
 
 .contenedorEnlaces {
@@ -185,3 +187,19 @@ h4.subtitulo {
   font-size: large;
   border-bottom: 2px solid var(--color-complementario-claro);
 }
+
+/* -- Footer -- */
+footer{
+  background-color: var(--color-grey-body);
+  padding: 20px;
+}
+
+footer > p{
+  color: white;
+  padding: 3px;
+  text-align: center;
+  font-size: 12px;
+}
+
+
+
