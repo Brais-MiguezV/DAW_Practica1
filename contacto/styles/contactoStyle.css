@@ -19,7 +19,7 @@ header {
 }
 
 header h2{
-    font-family: "Daisy", Helvetica, sans-serif;
+    font-family: "Prestigious", Helvetica, sans-serif;
     font-size: 32px;
     font-weight: 600;
     text-align: center;
@@ -27,7 +27,6 @@ header h2{
 }
 
 #contenedorContacto{
-    background-color: red;
     height: 100vh;
     display: flex;
     flex-direction: column;
