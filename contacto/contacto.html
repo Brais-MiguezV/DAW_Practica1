@@ -32,20 +32,38 @@
     </nav>
 
     <header>
-            <h2>
-                Si quieres obtener más información, solo tienes que cubrir este formulario y me pondré en contacto contigo en el menor tiempo posible 😊
-            </h2>
+        <h2>
+            Si quieres obtener más información, solo tienes que cubrir este formulario y nos pondremos en contacto
+            contigo lo antes posible 😊
+        </h2>
     </header>
 
     <div id="contenedorContacto">
-
+        <div class="imagenFormulario">
+            <img src="../images/contacto.jpg" alt="">
+        </div>
+        <form action="formularioContacto">
+            <p>Nombre</p>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
+            <p>Apellidos</p>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Escribe tus apellidos">
+            <p>Email</p>
+            <input type="email" name="email" id="email" placeholder="Escribe tu email">
+            <p>Mensaje</p>
+            <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
+            <button type="submit" class="buttonHeader botonEnviar">Enviar</button>
+        </form>
     </div>
 
+
     <footer>
-        <p>Leticia Martínez Limeres - <a href="mailto:leticia.martinez.limeres@rai.usc">leticia.martinez.limeres@rai.usc</a></p>
+        <p>Leticia Martínez Limeres - <a
+                href="mailto:leticia.martinez.limeres@rai.usc">leticia.martinez.limeres@rai.usc</a></p>
         <p>Brais Míguez Varela - <a href="mailto:brais.miguez@rai.usc">brais.miguez@rai.usc</a></p>
         <p>Copyright@ DAW-2023</p>
     </footer>
+
+    <!--script src="js/contacto.js"></script-->
 
 </body>
 

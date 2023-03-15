@@ -292,12 +292,12 @@ button:hover .button-text {
   margin-top: 60px;
   padding: 40px;
   text-align: center;
+  min-height: 70vh !important;
 }
 
 .redes{
   font-size: 15px;
   display: flex;
-  height: 80%;
   justify-content: space-around;
   align-items: center;
   align-content: center;
