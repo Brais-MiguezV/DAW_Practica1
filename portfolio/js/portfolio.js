@@ -1,31 +1,36 @@
-const maxBlur= 10;
+// Get the element to animate
+const $box = $('.huella');
+let screenSize = window.innerHeight;
 
+// Check if the element is in the viewport
+function isInViewport(element) {
 
-window.addEventListener("scroll", function () {
-    let elements = document.getElementsByClassName("imagenHeader");
-    let screenSize = window.innerHeight;
-
-    for (let i = 0; i < elements.length; i++) {
-        let element = elements[i];
-
-        let elementTop = element.getBoundingClientRect().top;
-        //Cambiar el blur de la imagen en funcion de la posicion de scroll
-        let blur = (elementTop / screenSize) * maxBlur;
-        element.style.filter = "blur(" + blur + "px)";
-        let translate = (elementTop / screenSize) * 200;
-        if(i % 2 == 0){
-            //Cambiar propiedad transform
-            
-            element.style.transform = "translateY(" + translate + "px)";
-        }else{
-            
-            element.style.transform = "translateY(-" + translate + "px)";
+        if (element.getBoundingClientRect().top < screenSize) {
+            element.classList.add("visible");
+        } else {
+            element.classList.remove("visible");
         }
+//   const rect = element.getBoundingClientRect;
+//   return (
+//     rect.top >= 0 &&
+//     rect.left >= 0 &&
+//     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+//     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+//   );
+}
 
-        element.style.opacity = 1 - (elementTop / screenSize);
+// Function to handle the scroll event
+function handleScroll() {
 
-
-        console.log(element.getBoundingClientRect().top);
-
+    for(let i = 0; i< $box.length; i++){
+        let element = $box[i];
+        if (isInViewport(element)) {
+            element.addClass('visible');
+    
+          }
+        
     }
-})
+}
+
+// Add the event listener
+$(window).on('scroll', handleScroll);
