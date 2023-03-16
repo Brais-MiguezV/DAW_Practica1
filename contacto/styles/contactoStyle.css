@@ -6,20 +6,64 @@
 ===============================
 +++++++++++++++++++*/
 
+header, #contenedorContacto {
+    background-image: url("/contacto/images/fondo.jpg");
+    background-size: cover;
+    background-attachment: fixed;  
+}
+
 
 header {
     padding-top: 80px;
-    top: 100px;
-    position: relative;    
+    min-height: 30vh;
 }
 
 header h2{
-    position: absolute;
-    font-family: "Harmonais", Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    top: 10%;
-    left: 10%;
-    padding: 20px;
+    font-family: "Josefine Sans", Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 50px;
 }
 
+#contenedorContacto{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.botonEnviar{
+    font-family: "Josefine Sans", serif;
+}
+
+input, textarea{
+    font-family: "Josefine Sans", serif;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 500px;
+
+}
+
+.contenedorFormulario{
+    background-color: rgba(255, 255, 255, 0.7); 
+    border-radius: 20px; 
+    box-shadow: 0 8px 32px 0 rgba(3, 7, 5, 0.847); 
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px); 
+    border: 1px solid rgba(255, 255, 255, 0.18); 
+    height: 90vh; 
+    width: 50vw; 
+  }
+  
