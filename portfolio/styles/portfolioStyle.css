@@ -6,14 +6,6 @@
 ===============================
 +++++++++++++++++++*/
 
-
-*, *::before, *::after {
-    margin:0;
-    padding:0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
 section{
   min-height: 0;
 }
@@ -26,8 +18,8 @@ section{
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  margin: -200px auto;
-  margin-top:-200px;
+  margin: -150px auto;
+  padding: 150px 0;
   width:60vw;
   transition: all 1s ease-in;
 }
@@ -46,6 +38,7 @@ section{
   justify-items: center;
   transition: all 1s ease-in;
   transform: translateX(30px);
+  z-index: 3;
 }
 
 .imagenRecuadro{
@@ -57,7 +50,7 @@ section{
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
   /* outline:thick double var(--color-grey-body); */
   background-color: var(--color-principal-claro);
-  transform: scale(0.9);
+  transform: scale(0.8);
   transition: all 0.5s ease;
 }
 
