@@ -6,46 +6,193 @@
 ===============================
 +++++++++++++++++++*/
 
-header, #contenedorContacto {
-    background-image: url("/contacto/images/fondo.jpg");
+#contenedorContacto {
+    background-image: url("/contacto/images/fondo2.jpg");
     background-size: cover;
-    background-attachment: fixed;  
-}
-
-
-header {
-    padding-top: 80px;
-    min-height: 30vh;
-}
-
-header h2{
-    font-family: "Josefine Sans", Helvetica, sans-serif;
-    font-size: 22px;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 50px;
-}
-
-#contenedorContacto{
-    height: 100vh;
+    background-attachment: fixed;
+    padding-top: 170px;
+    height: 150vh;
     display: flex;
     flex-direction: column;
-    align-items: center;  
+    align-items: center;
 }
 
-form{
+.contenedorFormulario {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(3, 7, 5, 0.847);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    height: 110vh;
+    width: 50vw;
+}
+
+h2 {
+    font-family: "Harmonais", Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    padding: 70px 20px 0 20px;
+}
+
+/*-----------------Formulario-----------------*/
+
+.group {
+    position: relative;
+}
+
+.input {
+    font-size: 12px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 200px;
+    border: none;
+    border-bottom: 1px solid #515151;
+    background: transparent;
+}
+
+.input:focus {
+    outline: none;
+}
+
+label {
+    color: #999;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.input:focus~label,
+.input:valid~label {
+    top: -20px;
+    font-size: 14px;
+    color: var(--color-complementario-claro);
+}
+
+.bar {
+    position: relative;
+    display: block;
+    width: 200px;
+}
+
+.bar:before,
+.bar:after {
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 1px;
+    position: absolute;
+    background: var(--color-complementario-claro);
+    transition: 0.2s ease all;
+    -moz-transition: 0.2s ease all;
+    -webkit-transition: 0.2s ease all;
+}
+
+.bar:before {
+    left: 50%;
+}
+
+.bar:after {
+    right: 50%;
+}
+
+.input:focus~.bar:before,
+.input:focus~.bar:after {
+    width: 50%;
+}
+
+.highlight {
+    position: absolute;
+    height: 60%;
+    width: 100px;
+    top: 25%;
+    left: 0;
+    pointer-events: none;
+    opacity: 0.5;
+}
+
+.input:focus~.highlight {
+    animation: inputHighlighter 0.3s ease;
+}
+
+@keyframes inputHighlighter {
+    from {
+        background: var(--color-complementario-claro);;
+    }
+
+    to {
+        width: 0;
+        background: transparent;
+    }
+}
+
+/*-----------------Boton Envio-----------------*/
+
+.button {
+    position: relative;
+    overflow: hidden;
+    height: 30px;
+    padding: 0 20px;
+    border-radius: 15px;
+    background: var(--color-principal-claro-semitransparente);
+    background-size: 400%;
+    color:var(--color-grey-claro);
+  }
+  
+  .button:hover::before {
+    transform: scaleX(1);
+  }
+  
+  .button-content {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    width: 100%;
+    height: inherit;
+    border-radius: inherit;
+    background: linear-gradient(
+      82.3deg,
+      rgb(140, 233, 93) 10.8%,
+      rgb(88, 238, 195) 94.3%
+    );
+    transition: all 0.475s;
+  }
+
+
+/*
+form {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 50px;
 }
 
-.botonEnviar{
-    font-family: "Josefine Sans", serif;
+label {
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 10px;
 }
 
-input, textarea{
-    font-family: "Josefine Sans", serif;
+input,
+textarea,
+button {
+    font-family: "Harmonais", serif;
     font-size: 16px;
     font-weight: 500;
     border: 1px solid #000;
@@ -53,29 +200,9 @@ input, textarea{
     padding: 10px;
     margin: 10px;
     width: 500px;
-
+    resize: none;
 }
 
-button{
-    font-family: "Josefine Sans", serif;
-    font-size: 16px;
-    font-weight: 500;
-    border: 1px solid #000;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px;
-    width: 500px;
+button {
     background-color: var(--color-principal-claro);
-}
-
-.contenedorFormulario{
-    background-color: rgba(255, 255, 255, 0.7); 
-    border-radius: 20px; 
-    box-shadow: 0 8px 32px 0 rgba(3, 7, 5, 0.847); 
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px); 
-    border: 1px solid rgba(255, 255, 255, 0.18); 
-    height: 90vh; 
-    width: 50vw; 
-  }
-  
+}*/
