@@ -14,12 +14,31 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+section{
+  min-height: 0;
+}
 
 #portfolio{
   padding: 90px 0;
- 
-
 }
+.seccionVacia{
+  height: 100vh;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -200px auto;
+  margin-top:-200px;
+  width:60vw;
+  transition: all 2s ease-in;
+}
+
+.sec1{
+  background-image: url("../images/curva1.png");
+}
+.sec2{
+  background-image: url("../images/curva2.png");
+}
+
 .grid{
   width:100vw;
   display: grid;
@@ -27,19 +46,41 @@
   grid-template-rows: repeat(5, 1fr);
   align-items: center;
   justify-items: center;
+  margin-top: -120px;
+}
+.primeraSeccion{
+  align-items: center;
+  display: grid;
+  padding:30px;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  z-index: 12;
 }
 
-.huella{
-  width:90px;
-  height: 100px;
-  /* position: absolute; */
+.imagenRecuadro{
+  width: 100%;
+  max-width: 35vw;
+  height: auto;
+  border: 10px double var(--color-grey-body);
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+  /* outline:thick double var(--color-grey-body); */
+  background-color: var(--color-principal-claro);
+  transform: scale(0.9);
+  transition: all 0.5s ease;
+}
+
+.imagenRecuadro:hover{
+  transform: scale(1);
+  border-radius: 30px;
+}
+
+.oculta{
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.5s ease;
 }
 
 .imagen1{
- 
+
   transform: rotate(-50deg);
 }
 
@@ -151,6 +192,5 @@
 }
 
 .visible{
-  opacity: 0.5;
-
+  opacity: 1;
 }
