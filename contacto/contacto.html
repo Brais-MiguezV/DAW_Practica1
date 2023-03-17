@@ -31,29 +31,42 @@
         </div>
     </nav>
 
-    <header>
-        <h2>
-            Si quieres obtener más información, solo tienes que cubrir este formulario y nos pondremos en contacto
-            contigo lo antes posible 😊
-        </h2>
-    </header>
-
     <div id="contenedorContacto">
         <div class="imagenFormulario">
             <img src="../images/contacto.jpg" alt="">
         </div>
         <div class="contenedorFormulario">
-            <form action="formularioContacto">
-                <p>Nombre</p>
-                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre">
-                <p>Apellidos</p>
-                <input type="text" name="apellidos" id="apellidos" placeholder="Escribe tus apellidos">
-                <p>Email</p>
-                <input type="email" name="email" id="email" placeholder="Escribe tu email">
-                <p>Mensaje</p>
-                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escribe tu mensaje"></textarea>
-                <button type="submit" class="botonEnviar">Enviar</button>
-            </form>
+            <h2>
+                Si quieres obtener más información, solo tienes que cubrir este formulario y nos pondremos en contacto
+                contigo lo antes posible 😊
+            </h2>
+            <div class="group">
+                <input required="" type="text" class="input">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Nombre</label>
+              </div>
+              <div class="group">
+                <input required="" type="ap" class="input">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Apellidos</label>
+              </div>            
+              <div class="group">
+                <input required="" type="email" class="input">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Email</label>
+              </div>            
+              <div class="group">
+                <input required="" type="mensaje" class="input">
+                <span class="highlight"></span>
+                <span class="bar"></span>
+                <label>Mensaje</label>
+              </div class="group">
+              <button class="button">
+                <span class="button-content">Download </span>
+            </button>
         </div>
 
     </div>
