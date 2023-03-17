@@ -56,6 +56,18 @@ input, textarea{
 
 }
 
+button{
+    font-family: "Josefine Sans", serif;
+    font-size: 16px;
+    font-weight: 500;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 500px;
+    background-color: var(--color-principal-claro);
+}
+
 .contenedorFormulario{
     background-color: rgba(255, 255, 255, 0.7); 
     border-radius: 20px; 
