@@ -1,5 +1,6 @@
 // Get the element to animate
-const $box = $(".oculta");
+const $ocultos = $(".oculta");
+const $seccionsVacias = $(".seccionVacia");
 let screenSize = window.innerHeight;
 
 // Check if the element is in the viewport
@@ -13,10 +14,13 @@ function isInViewport(element) {
 
 // Function to handle the scroll event
 function handleScroll() {
-  for (let i = 0; i < $box.length; i++) {
-    let element = $box[i];
+  for (let i = 0; i < $ocultos.length; i++) {
+    let element = $ocultos[i];
     if (isInViewport(element)) {
       element.classList.add("visible");
+      if (element.classList.contains("seccionVacia")) {
+        element.style.opacity="0.5";
+      }
     } else {
       element.classList.remove("visible");
     }
