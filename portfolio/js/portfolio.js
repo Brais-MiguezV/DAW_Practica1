@@ -1,36 +1,27 @@
 // Get the element to animate
-const $box = $('.huella');
+const $box = $(".oculta");
 let screenSize = window.innerHeight;
 
 // Check if the element is in the viewport
 function isInViewport(element) {
-
-        if (element.getBoundingClientRect().top < screenSize) {
-            element.classList.add("visible");
-        } else {
-            element.classList.remove("visible");
-        }
-//   const rect = element.getBoundingClientRect;
-//   return (
-//     rect.top >= 0 &&
-//     rect.left >= 0 &&
-//     rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-//     rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-//   );
+  if (element.getBoundingClientRect().top < screenSize) {
+    return true;
+  } else {
+    return false;
+  }
 }
 
 // Function to handle the scroll event
 function handleScroll() {
-
-    for(let i = 0; i< $box.length; i++){
-        let element = $box[i];
-        if (isInViewport(element)) {
-            element.addClass('visible');
-    
-          }
-        
+  for (let i = 0; i < $box.length; i++) {
+    let element = $box[i];
+    if (isInViewport(element)) {
+      element.classList.add("visible");
+    } else {
+      element.classList.remove("visible");
     }
+  }
 }
 
 // Add the event listener
-$(window).on('scroll', handleScroll);
+$(window).on("scroll", handleScroll);
