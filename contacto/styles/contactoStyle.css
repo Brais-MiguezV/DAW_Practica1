@@ -10,8 +10,8 @@
   background-image: url("/contacto/images/fondo.jpg");
   background-size: cover;
   background-attachment: fixed;
-  padding-top: 170px;
-  height: 150vh;
+  padding-top: 190px;
+  height: 170vh;
 }
 
 h2 {
@@ -33,9 +33,9 @@ h2 {
   box-shadow: 0 8px 32px 0 rgba(3, 7, 5, 0.847);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
-  top: 80%;
+  top: 85%;
   left: 50%;
-  height: 105vh;
+  height: 120vh;
   width: 40vw;
   padding: 40px;
 }
@@ -89,7 +89,7 @@ h2 {
   transition: border-color 0.3s ease-in-out; 
   width: 100%;
   background-color: white;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #mensaje:focus {
