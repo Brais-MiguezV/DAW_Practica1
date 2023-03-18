@@ -267,6 +267,10 @@ button:hover .button-text {
   transform: skewX(-12deg);
 }
 
+.opinionTitulo{
+  margin-bottom: 10px;
+}
+
 .opinion > * {
   transform: skewX(12deg);
 }
