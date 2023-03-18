@@ -92,9 +92,10 @@ h2 {
   margin: 10px 0px 40px 0px;
 }
 
-#mensaje:focus {
+.contenedorFormulario textarea:focus {
   border-color: var(--color-principal-claro); 
 }
+
 
 /*-----------------Boton Envio-----------------*/
 
