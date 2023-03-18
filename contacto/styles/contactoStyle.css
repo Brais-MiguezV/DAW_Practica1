@@ -89,7 +89,7 @@ h2 {
   transition: border-color 0.3s ease-in-out; 
   width: 100%;
   background-color: white;
-  margin-bottom: 30px;
+  margin: 10px 0px 40px 0px;
 }
 
 #mensaje:focus {
