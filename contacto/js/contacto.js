@@ -1,29 +1,47 @@
-/*$(document).ready(function() {
-  $('#contact-form').submit(function(e) {
-    e.preventDefault(); // prevent the form from submitting
-    
-    // get the form data
-    const formData = {
-      name: $('#name').val(),
-      email: $('#email').val(),
-      message: $('#message').val()
-    };
-    
-    // send the form data to the server
-    $.ajax({
-      url: 'send-email.php', // replace with your server-side script
-      method: 'POST',
-      data: formData
-    }).done(function(response) {
-      // handle the response from the server
-      console.log(response);
-      alert('Your message has been sent!');
-      $('#name').val('');
-      $('#email').val('');
-      $('#message').val('');
-    }).fail(function() {
-      // handle any errors
-      alert('An error occurred while sending your message.');
-    });
-  });
-});*/
+$(document).ready(function () {
+  const form = document.querySelector('form');
+  const button = form.querySelector('button');
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault(); // prevenir que el formulario se envíe automáticamente
+
+    const nombre = form.querySelector('input[name="nombre"]').value;
+    const apellidos = form.querySelector('input[name="apellidos"]').value;
+    const correo = form.querySelector('input[name="correo"]').value;
+    const telefono = form.querySelector('input[name="telefono"]').value;
+    const asunto = form.querySelector('input[name="asunto"]').value;
+    const mensaje = form.querySelector('textarea[name="mensaje"]').value;
+    /*
+        Email.send({
+          SecureToken : "cfc8776e-e565-4b0a-9f5c-1d9baa2addb5",
+          Username: nombre + "\t" + apellidos,
+          To: 'lety.mtnez02@gmail.com',
+          From: correo,
+          Subject: asunto,
+          Body: mensaje + '\n\n Información contacto: ' + telefono,
+        }).then(
+          message => alert(message)
+        );*/
+
+    // Configuración de smtpJS
+    Email.send({
+      SecureToken: 'cfc8776e-e565-4b0a-9f5c-1d9baa2addb5',
+      To: correo,
+      From: 'lety.mtnez02@gmail.com',
+      Subject: asunto,
+      Body: mensaje + '\n\n Información contacto\n' + nombre + ' ' + apellidos + ' ' + telefono,
+    }).then((message) => {
+      console.log('Mensaje enviado:', message);
+      // aquí puedes agregar el código para mostrar un mensaje de confirmación al usuario
+    }).catch((error) => {
+      console.error('Error al enviar el mensaje:', error);
+      // aquí puedes agregar el código para mostrar un mensaje de error al usuario
+    });
+  });
+
+  button.addEventListener('click', () => {
+    form.submit();
+  });
+
+
+});

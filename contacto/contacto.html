@@ -32,50 +32,45 @@
     </nav>
 
     <div id="contenedorContacto">
-        <div class="imagenFormulario">
-            <img src="../images/contacto.jpg" alt="">
-        </div>
+        <img src="../images/contacto.jpg" alt="">
         <div class="contenedorFormulario">
             <h2>
                 Si quieres obtener más información, solo tienes que cubrir este formulario y nos pondremos en contacto
                 contigo lo antes posible 😊
             </h2>
-            <div class="login-box">
-
-                <form>
-                    <div class="user-box">
-                        <input type="text" name="" required="">
-                        <label>Username</label>
-                    </div>
-                    <div class="user-box">
-                        <input type="password" name="" required="">
-                        <label>Password</label>
-                    </div>
-                </form>
-            </div>
-            <!--div class="input-group">
-                <input required="" type="text" name="text" autocomplete="off" class="input">
-                <label class="user-label">Nombre</label>
-            </div>
-            <div class="input-group">
-                <input required="" type="text" name="text" autocomplete="off" class="input">
-                <label class="user-label">Apellidos</label>
-            </div>
-            <div class="input-group">
-                <input required="" type="text" name="text" autocomplete="off" class="input">
-                <label class="user-label">Correo Electrónico</label>
-            </div>
-            <div class="input-group">
-                <input required="" type="text" name="text" autocomplete="off" class="textarea">
-                <label class="user-label">Mensaje</label>
-            </div>
-            <button class="button">
-                <span class="button-content">Download </span>
-            </button-->
+            <form>
+                <div class="cajaContenido">
+                    <input type="text" name="nombre"  id="nombre" required="">
+                    <label>Nombre</label>
+                </div>
+                <div class="cajaContenido">
+                    <input type="text" name="apellidos" id="apellidos" required="">
+                    <label>Apellidos</label>
+                </div>
+                <div class="cajaContenido">
+                    <input type="email" name="correo" id="correo" required="">
+                    <label>Correo Electrónico</label>
+                </div>
+                <div class="cajaContenido">
+                    <input type="tel" name="telefono" id="telefono" required="">
+                    <label>Teléfono</label>
+                </div>
+                <div class="cajaContenido">
+                    <input type="text" name="asunto" id="asunto" required="">
+                    <label>Asunto</label>
+                </div>
+                <div class="cajaContenido">
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="8"
+                        placeholder="Escribe tu mensaje"></textarea>
+                </div>
+                <center>
+                    <button class="button">
+                        <span>Enviar</span>
+                    </button>
+                </center>
+            </form>
         </div>
-
     </div>
-
 
     <footer>
         <p>Leticia Martínez Limeres - <a
@@ -84,7 +79,8 @@
         <p>Copyright@ DAW-2023</p>
     </footer>
 
-    <!--script src="js/contacto.js"></script-->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./js/contacto.js"></script>
 
 </body>
 
