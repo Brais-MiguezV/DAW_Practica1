@@ -12,30 +12,9 @@
         <meta name="theme-color" content="#f4ede6">
         <meta name="msapplication-navbutton-color" content="#f4ede6">
         <meta name="apple-mobile-web-app-status-bar-style" content="#f4ede6">
-        <script>
-            /* ésto comprueba la localStorage si ya tiene la variable guardada */
-            function compruebaAceptaCookies() {
-                if (localStorage.aceptaCookies == 'true') {
-                    cajacookies.style.display = 'none';
-                }
-            }
-
-            /* aquí guardamos la variable de que se ha
-            aceptado el uso de cookies así no mostraremos
-            el mensaje de nuevo */
-            function aceptarCookies() {
-                localStorage.aceptaCookies = 'true';
-                cajacookies.style.display = 'none';
-            }
-
-            /* ésto se ejecuta cuando la web está cargada */
-            $(document).ready(function () {
-                compruebaAceptaCookies();
-            });
-        </script>
 </head>
 
-<body onload>
+<body>
     <nav class="navegacion">
         <div class="contenedorLogo">
             <img src="images/logo.png" alt="">
@@ -45,7 +24,23 @@
             <ul class="listaEnlaces">
                 <li class="enlaceNavegacionL active"><a href="index.html">Inicio</a></li>
                 <li class="enlaceNavegacionL"><a href="./aboutUs/aboutUs.html">About</a></li>
-                <li class="enlaceNavegacionL"><a href="./portfolio/portfolio.html">Portfolio</a></li>
+                <li class="enlaceNavegacionL portfolio"><a href="./portfolio/portfolio.html">Portfolio</a>
+                    <div class="subEnlaceNavegacionL"><a
+                            href="./portfolio/portfolioComida/portfolioComida.html">Comida</a></div>
+                    <div class="subEnlaceNavegacionL"><a
+                            href="./portfolio/portfolioViajes/portfolioViajes.html">Paisajes</a></div>
+                    <div class="subEnlaceNavegacionL"><a
+                            href="./portfolio/portfolioGimnasia/portfolioGimnasia.html">Gimnasia</a></div>
+                    <div class="subEnlaceNavegacionL"><a
+                            href="./portfolio/portfolioAnimales/portfolioAnimales.html">Animales</a>
+                    </div>
+                    <!--ul class="listaEnlacesPortfolio">
+                        <li class="subEnlaceNavegacionL"><a href="./portfolio/portfolioComida/portfolioComida.html">Comida</a></li>
+                        <li class="subEnlaceNavegacionL"><a href="./portfolio/portfolioViajes/portfolioViajes.html">Paisajes</a></li>
+                        <li class="subEnlaceNavegacionL"><a href="./portfolio/portfolioGimnasia/portfolioGimnasia.html">Gimnasia</a></li>
+                        <li class="subEnlaceNavegacionL"><a href="./portfolio/portfolioAnimales/portfolioAnimales.html">Animales</a></li>
+                    </ul-->
+                </li>
                 <li class="enlaceNavegacionL"><a href="./contacto/contacto.html">Contacto</a></li>
             </ul>
         </div>
@@ -172,11 +167,11 @@
     </section>
 
     <div id="cajaCookies">
-        <p>Esta web utiliza cookies propias y de terceros para mejorar la experiencia de navegación, y ofrecer
-            contenidos y publicidad de interés. Al continuar navegando aceptas nuestra <a
-                href="./cookies/cookies.html">política de cookies</a>.</p>
-        <button id="aceptarCookies">Aceptar</button>
-
+        <h2>¡Bienvenido! </h2>
+        <p> Estás en una página de fotografía. Es posible que ya te hayamos avisado pero esta web utiliza
+            cookies para mejorar la experiencia de navegación.
+        <p><a href="./PoliticaCookies.pdf">Política de Cookies</a></p>
+        <button id="botonAceptarCookies" class="accept-cookies-btn">Aceptar</button>
     </div>
 
     <footer>
