@@ -102,6 +102,7 @@ header {
 nav {
   display: grid;
   position: fixed;
+  top:0;
   width: 100vw;
   height: 80px;
   grid-template-columns: 1fr 1fr;
