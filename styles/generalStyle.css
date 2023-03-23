@@ -186,7 +186,8 @@ h4.subtitulo {
   color: black;
 }
 
-.enlaceNavegacionL.active > a {
+.enlaceNavegacionL.active > a,
+.subenlaceNavegacionL.active > a {
   color: var(--color-complementario-claro);
   font-size: large;
   border-bottom: 2px solid var(--color-complementario-claro);
