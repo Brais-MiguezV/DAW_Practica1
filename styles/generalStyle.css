@@ -192,32 +192,33 @@ h4.subtitulo {
   border-bottom: 2px solid var(--color-complementario-claro);
 }
 
-/*.portfolio{
-  display: inline-block;
-}
-.subEnlaceNavegacionL {
+.listaEnlacesPortfolio{
   display: none;
   position: absolute;
-  width: 100%;
-  overflow: auto;
-  box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.4);
+  top: 100%;
+  width: 100px;
+  list-style: none;
+  background-color: var(--color-principal-claro);
+  border-radius: 10px;
+  box-shadow: 0 0 15px black;
+  padding: 10px;
+  margin-top: 1px;
 }
 
-.portfolio:hover .subEnlaceNavegacionL {
-  display: block;
-}
-.subEnlaceNavegacionL a {
-  display: block;
-  color: #000000;
+.listaEnlacesPortfolio > li{
   padding: 5px;
-  text-decoration: none;
+  justify-content: center;  
 }
-.subEnlaceNavegacionL a:hover {
-  color: #FFFFFF;
-  background-color: #00A4BD;
-}*/
 
+.listaEnlacesPortfolio > li:hover{
+  background-color: var( --color-principal-claro);
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+}
 
+.portfolio:hover > ul{
+  display: block;
+}
 
 /* -- Footer -- */
 footer{
