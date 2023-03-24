@@ -208,13 +208,14 @@ h4.subtitulo {
 
 .listaEnlacesPortfolio > li{
   padding: 5px;
-  justify-content: center;  
+  justify-content: center; 
+  border-bottom: 2px solid rgba(0, 0, 0, 0); 
+  transition: all 0.3s ease;
 }
 
 .listaEnlacesPortfolio > li:hover{
   background-color: var( --color-principal-claro);
-  box-shadow: 0 0 10px black;
-  border-radius: 10px;
+  border-bottom: 2px solid var(--color-grey-body);
 }
 
 .portfolio:hover > ul{
