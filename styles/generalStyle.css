@@ -201,20 +201,21 @@ h4.subtitulo {
   list-style: none;
   background-color: var(--color-principal-claro);
   border-radius: 10px;
-  box-shadow: 0 0 15px black;
+  box-shadow: 0 0 10px black;
   padding: 10px;
-  margin-top: 1px;
+  margin-top: 2px;
 }
 
 .listaEnlacesPortfolio > li{
   padding: 5px;
-  justify-content: center;  
+  justify-content: center; 
+  border-bottom: 2px solid rgba(0, 0, 0, 0); 
+  transition: all 0.3s ease;
 }
 
 .listaEnlacesPortfolio > li:hover{
   background-color: var( --color-principal-claro);
-  box-shadow: 0 0 10px black;
-  border-radius: 10px;
+  border-bottom: 2px solid var(--color-grey-body);
 }
 
 .portfolio:hover > ul{
