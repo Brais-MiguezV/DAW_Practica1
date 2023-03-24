@@ -315,3 +315,43 @@ button:hover .button-text {
   height: 100px;
   margin: 0 auto;
 }
+
+/* Cookies */
+#cajaCookies {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 350px;
+  margin: 0px 10px 10px 0px;
+  border-radius: 20px;
+  background-color: white;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.473);
+}
+
+#cajaCookies > * {
+  font-size: 15px;
+  text-align: center;
+  padding: 10px;
+}
+
+#botonAceptarCookies {
+  background-color: var(--color-complementario-mas-claro);
+  font-weight: bold;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#cajaCookies button:hover {
+  background-color: var(--color-complementario-claro);
+}
+
+#cajaCookies a{
+  font-weight: bold;
+  color: var(--color-complementario-claro);
+}
