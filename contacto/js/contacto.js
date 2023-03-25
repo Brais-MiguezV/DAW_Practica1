@@ -1,4 +1,3 @@
-/*$("form").submit(function(event) {*/
 function sendEmail() {
     // Recoge los datos del formulario
     var formData = {};
