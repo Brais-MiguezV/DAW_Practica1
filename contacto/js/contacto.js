@@ -9,7 +9,7 @@ function sendEmail() {
     // Envía el correo electrónico con los datos del formulario
     Email.send({
         Host: "smtp.gmail.com",
-        Username: "tucorreo@gmail.com",
+        Username: "lety.mtnez02@gmail.com",
         Password: "tucontraseña",
         To: "lety.mtnez02@gmail.com",
         From: formData.correo,
