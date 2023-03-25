@@ -12,8 +12,8 @@ $("form").submit(function(event) {
       Host: "smtp.gmail.com",
       Username: "tucorreo@gmail.com",
       Password: "tucontraseña",
-      To: "destinatario@example.com",
-      From: "tucorreo@gmail.com",
+      To: "lety.mtnez02@gmail.com",
+      From: formData.correo,
       Subject: formData.asunto,
       Body: "Nombre: " + formData.nombre + "<br>" +
             "Apellidos: " + formData.apellidos + "<br>" +
