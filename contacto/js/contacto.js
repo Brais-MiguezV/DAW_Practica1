@@ -1,7 +1,7 @@
 $("form").submit(function(event) {
     event.preventDefault(); // Previene que el formulario se envíe por el método por defecto
   
-    // Recoge los datos del formulario y conviértelos en un objeto
+    // Recoge los datos del formulario
     var formData = {};
     $.each($(this).serializeArray(), function(i, field) {
       formData[field.name] = field.value;
