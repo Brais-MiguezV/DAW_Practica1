@@ -7,7 +7,7 @@
 +++++++++++++++++++*/
 
 #contenedorContacto {
-  background-image: url("/contacto/images/fondo.jpg");
+  background-image: url("../images/fondo.jpg");
   background-size: cover;
   background-attachment: fixed;
   padding-top: 190px;
