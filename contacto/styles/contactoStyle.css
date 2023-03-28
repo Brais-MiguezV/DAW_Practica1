@@ -35,7 +35,6 @@ h2 {
   -webkit-backdrop-filter: blur(4px);
   top: 85%;
   left: 50%;
-  /* height: 120vh; A altura ten que vir delimitada polos elementos que se atopan dentro */
   max-width: 40vw; 
   width: 100%;
   padding: 40px;

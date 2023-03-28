@@ -1,18 +1,18 @@
 
 function sendEmail() {
     // Obtenemos los valores de los campos del formulario
-    const nombre = document.getElementById('nombre').value;
-    const apellidos = document.getElementById('apellidos').value;
-    const email = document.getElementById('correo').value;
-    const telefono = document.getElementById('telefono').value;
-    const asunto = document.getElementById('asunto').value;
-    const mensaje = document.getElementById('mensaje').value;
+    const nombre = document.getElementsByName('nombre')[0].value;
+    const apellidos = document.getElementsByName('apellidos')[0].value;
+    const email = document.getElementsByName('correo')[0].value;
+    const telefono = document.getElementsByName('telefono')[0].value;
+    const asunto = document.getElementsByName('asunto')[0].value;
+    const mensaje = document.getElementsByName('mensaje')[0].value;
 
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // significa que debe tener un @ y un punto
     const telefonoRegex = /^\d{9}$/; // significa que debe tener 9 dígitos
 
     // Comprobamos que los campos no estén vacíos y que el email y el teléfono sean válidos
-    if (nombre != '' && apellidos != '' && asunto != '' && mensaje != '' && email != '' && telefono != '') {
+    if (nombre != '' && apellidos != '' && asunto != '' && email != '' && telefono != '') {
         if (emailRegex.test(email) && telefonoRegex.test(telefono)) {
             alert('¡Mensaje enviado con éxito!');
         } else if (emailRegex.test(email) && !telefonoRegex.test(telefono)) {
@@ -23,7 +23,6 @@ function sendEmail() {
             controlCampos();
         } else {
             alert('Por favor, introduce un correo electrónico y un teléfono válidos.');
-            
             controlCampos();
         }
     } else {
@@ -35,24 +34,21 @@ function sendEmail() {
 
 function controlCampos(){
     if (nombre == '') {
-        document.getElementById('nombre').classList.add('error');
+        nombre
+        nombre.classList.add('error');
     }
     if (apellidos == '') {
-        document.getElementById('apellidos').classList.add('error');
+        apellidos.classList.add('error');
     }
     if (email == '') {
-        document.getElementById('correo').classList.add('error');
+        email.classList.add('error');
     }
     if (telefono == '') {
-        document.getElementById('telefono').classList.add('error');
+        telefono.classList.add('error');
     }
     if (asunto == '') {
-        document.getElementById('asunto').classList.add('error');
+        asunto.classList.add('error');
     }
-    if (mensaje == '') {
-        document.getElementById('mensaje').classList.add('error');
-    }
-
 }
 
     // Añadimos el evento click al botón de enviar
