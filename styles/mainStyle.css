@@ -359,6 +359,9 @@ button:hover .button-text {
   color: var(--color-complementario-claro);
 }
 
+.enlaceSocial{
+  transition: all 0.5s ease-in-out;
+}
 
 @media only screen and (max-width: 1256px){
   .resumen{

@@ -24,6 +24,33 @@ document.getElementById("botonAceptarCookies").addEventListener("click", functio
     localStorage.setItem("cookieAccepted", "true");
 });
 
+document.querySelectorAll(".enlaceSocial").forEach((element) => {
+    element.addEventListener("mouseenter", ()=>{
+        element.style.transform = "translateY(-5px)";
+        element.style.boxShadow = "0 10px 20px rgba(0,0,0,0.4)";
+        element.style.borderRadius = "20px";
+    })
+});
+
+document.querySelectorAll(".enlaceSocial").forEach((element) => {
+    element.addEventListener("mouseout", ()=>{
+        element.style.transform = "translateY(0px)";
+        element.style.boxShadow = "0 0 0 rgba(0,0,0,0)";
+        element.style.borderRadius = "10px";
+    })
+});
+
+document.querySelector(".spanFinal").addEventListener("mouseenter", ()=>{
+    document.querySelector(".spanFinal").innerHTML = "¡Gracias por visitar a la página web!";
+});
+
+document.querySelector(".spanFinal").addEventListener("mouseout", ()=>{
+    document.querySelector(".spanFinal").innerHTML = "DAW-2023";
+})
+
+
+
+
 
 
 
