@@ -176,3 +176,45 @@ img.music-note {
   object-fit: cover;
   display: block;
 }
+
+
+@media only screen and (max-width: 1100px){
+  .secondPage{
+    width:100%;
+  }
+}
+
+@media only screen and (max-width: 850px){
+  .imagenDestacada{
+    flex-direction: column;
+  }
+
+  .reverse{
+    flex-direction: column-reverse;
+  }
+
+  h1.titulo{
+    font-size: 60px;
+  }
+
+  h2.subtitulo{
+    font-size: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 500px){
+  h2.titulo{
+    font-size: 50px !important;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .secondPage{
+    padding: 50px;
+  }
+  .galeria{
+    gap:5px;
+    padding: 5px;
+  }
+}
