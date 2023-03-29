@@ -48,3 +48,26 @@ $(document).ready(function () {
     });
   
 });
+
+
+
+function cargaTexto() {
+    fetch("../ficheroJSON.json").then(ajaxOK);
+}
+
+function ajaxOK(response) {
+    response.json().then(muestraTexto);
+}
+
+function muestraTexto(json) {
+    
+    for(let i = 0 ; i < json.socios.length ; i++){
+        document.getElementById(`socio${i+1}Nombre`).innerHTML = json.socios[i].nombre;
+        document.getElementById(`socio${i+1}Texto`).innerHTML = json.socios[i].descripcion;
+        document.getElementById(`socio${i+1}Imagen`).src = json.socios[i].foto;
+    }
+}
+
+cargaTexto();
+
+

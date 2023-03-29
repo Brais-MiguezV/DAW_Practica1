@@ -10,6 +10,10 @@
             "descripcion": "Especialista en fotografía en movimiento. Se enfoca en capturar momentos únicos y especiales en cada sesión de fotos, y trabaja en estrecha colaboración con los clientes para asegurarse de que cada detalle sea perfecto",
             "foto": "../images/socio2.jpg"
         },
-        
+        {
+            "nombre": "Sandra Portela",
+            "descripcion": "Fotógrafa de paisajes. Con un ojo para la composición y el color, captura imágenes impresionantes que transportan a los espectadores a lugares nuevos y emocionantes.",
+            "foto": "../images/socio3.jpg"
+        }
     ]
 }
