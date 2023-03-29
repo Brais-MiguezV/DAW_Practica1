@@ -52,7 +52,7 @@ document.querySelector(".spanFinal").addEventListener("mouseout", ()=>{
 
 
 function loadDoc() {
-    var xhttp = new XMLHttpRequest();
+    let xhttp = new XMLHttpRequest();
 
     xhttp.open("GET", "../ficheroXML.xml", true);
     xhttp.send();
@@ -64,19 +64,16 @@ function loadDoc() {
     };
 }
 
+function myFunction(xml) {
+    let i = 0;
+    let xmlDoc = xml.responseXML;
+    let x = xmlDoc.getElementsByTagName("Valoracion");
 
+    for(i = 0; i < x.length; i++){
+        document.getElementById(`opinion${i+1}Imagen`).src = x[i].getElementsByTagName("Imagen")[0].childNodes[0].nodeValue;
+        document.getElementById(`opinion${i+1}Titulo`).innerHTML = x[i].getElementsByTagName("Titulo")[0].childNodes[0].nodeValue;
+        document.getElementById(`opinion${i+1}Texto`).innerHTML = x[i].getElementsByTagName("Review")[0].childNodes[0].nodeValue;
+    }
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+loadDoc();
