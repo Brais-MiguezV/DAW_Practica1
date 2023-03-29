@@ -52,7 +52,7 @@ $(document).ready(function () {
 
 
 function cargaTexto() {
-    fetch("../ficheroJSON.json").then(ajaxOK);
+    fetch("../js/ficheroJSON.json").then(ajaxOK);
 }
 
 function ajaxOK(response) {

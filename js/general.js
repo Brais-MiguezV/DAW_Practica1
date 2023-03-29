@@ -54,7 +54,7 @@ document.querySelector(".spanFinal").addEventListener("mouseout", ()=>{
 function loadDoc() {
     let xhttp = new XMLHttpRequest();
 
-    xhttp.open("GET", "../ficheroXML.xml", true);
+    xhttp.open("GET", "../js/ficheroXML.xml", true);
     xhttp.send();
 
     xhttp.onreadystatechange = function () {
