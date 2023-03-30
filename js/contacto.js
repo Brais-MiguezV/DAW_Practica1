@@ -32,7 +32,7 @@ function sendEmail() {
     }
 }
 
-function controlCampos(){
+function controlCampos() {
     if (nombre == '') {
         nombre
         nombre.classList.add('error');
@@ -51,6 +51,6 @@ function controlCampos(){
     }
 }
 
-    // Añadimos el evento click al botón de enviar
-    const botonEnviar = document.querySelector('.button');
-    botonEnviar.addEventListener('click', sendEmail);
+// Añadimos el evento click al botón de enviar
+const botonEnviar = document.querySelector('.button');
+botonEnviar.addEventListener('click', sendEmail);
