@@ -14,7 +14,6 @@ section{
   padding: 90px 0;
 }
 .seccionVacia{
-  min-height: 0;
   height: 50vh;
   min-height: 400px;
   background-size: cover;
@@ -49,7 +48,6 @@ section{
   border: 10px double var(--color-grey-body);
   border-radius: 50%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
-  /* outline:thick double var(--color-grey-body); */
   background-color: var(--color-principal-claro);
   transform: scale(0.8);
   transition: all 0.5s ease;
