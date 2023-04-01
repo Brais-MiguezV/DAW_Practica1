@@ -1,6 +1,5 @@
 // Get the element to animate
 const $ocultos = $(".oculta");
-const $seccionsVacias = $(".seccionVacia");
 let screenSize = window.innerHeight;
 
 // Check if the element is in the viewport

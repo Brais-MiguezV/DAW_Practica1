@@ -1,10 +1,9 @@
 // Get the element to animate
 const $seccion = $(".front-page");
-const $texto = $(".intro-text");
 let screenSize = window.innerHeight - 550;
 
 // Check if the element is in the viewport
-function isInViewport(element) {
+function isInViewport() {
   if ($seccion.offset().top < screenSize) {
     return true;
   } else {
@@ -14,7 +13,7 @@ function isInViewport(element) {
 
 // Function to handle the scroll event
 function handleScroll() {
-  if (isInViewport($seccion)) {
+  if (isInViewport()) {
     //scroll position
     let scrollPosition = $(window).scrollTop() + 100;
     //element position
@@ -24,7 +23,6 @@ function handleScroll() {
 
     //change the opacity of the element
     $seccion.css("clip-path", `circle(${percent}%)`);
-    $texto.css("opacity", `${percent / 10}`);
 
   }
 }
