@@ -34,7 +34,6 @@ function sendEmail() {
 
 function controlCampos() {
     if (nombre == '') {
-        nombre
         nombre.classList.add('error');
     }
     if (apellidos == '') {
